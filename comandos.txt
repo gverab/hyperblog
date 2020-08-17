@@ -21,6 +21,8 @@ palabra "master", y con eso vuelvo la cabecera al momento original antes del che
 15. git config --list : muestra la configuración por defecto actual.
 16. git rm --cached (nombre de archivo) : elimina el archivo de staying y lo vuelve Untracked (sirve para cuando uno se equivoca y agrega cambios que no quiere, con el add, 
 y aun no hace commit).
+NOTA: la diferencia entre git rm --cached (nombre archivo) y git reset HEAD es que: en el primer comando se quita el archivo de Satying pero también lo deja untracked, en cambio
+git reset MASTER (---soft o --hard) los quita del Staying area pero con todo el tracking que tenía. 
 
 
 Comandos terminal:
