@@ -14,6 +14,9 @@ algun commit incluye varios archivos, la comparación entre commits, incluye a t
 que al hacer log, ningun commit posterior al que indicamos aparece, es decir, volvimos en el tiempo y es como si ningun cambio hubiese sido realizado y ningun commit hecho.
 11. git reset ID_commit --soft : vuelve el repositorio al estado del commit indicado (todos los archivos vuelven a ese estado y los cambios hechos a partir de ese commit desaparecen, pero
 lo que haya quedado en staying cuando se hizo git add permanece disponible).
+12. git log --stat : permite ver todos los cambios ejecutados para cada commit y diferenciados por archivos (moverse con flechas y salir con q).
+13. git checkout ID_commit (nombre archivo): Permite mover la "cabecera" de la rama master hacia un punto en la historia deseado (ID_commit). El ID_commit puede ser reemplazado por la
+palabra "master", y con eso vuelvo la cabecera al momento original antes del checkout al "pasado", es decir la versión actual. 
 
 Comandos terminal:
 1. pwd : Indica carpeta actual.
@@ -21,4 +24,3 @@ Comandos terminal:
 3. clear : limpia la terminal.
 4. cd : cambiar entre directorios.
 5. mkdir : crea un directorio.
-6. 
