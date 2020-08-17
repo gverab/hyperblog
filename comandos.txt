@@ -1,0 +1,19 @@
+Curso git
+Comandos git:
+1. git status : muestra el status de los cambios
+2. git add (nombre archivo) : agrega archivos a staying
+3. git commit -m "Mensaje" : agrega archivos que estaban en staying, al repositorio.
+4. git config : muestra los comandos disponibles y variables configurables.
+5. git config --global user.name "Nombre" : Configura el nombre de usuario de git
+6. git config --global user.email "Nombre" : Configura el correo de usuario de git
+7. git show "nombre de archivo" : muestra los cambios efectuados entre los ultimos commits 
+8. git log: Muestra todos los commits hechos a un archivo, y los respectivos IDs de esos commits (sirven para el comando git diff).
+9. git diff ID_commitA ID_commitB : muestra las diferencias en el archivo entre los dos commits indicados. Idealmente usar el commit más antiguo como ID_commitA.
+
+Comandos terminal:
+1. pwd : Indica carpeta actual.
+2. ls : Lista los archivos y carpetas
+3. clear : limpia la terminal.
+4. cd : cambiar entre directorios.
+5. mkdir : crea un directorio.
+6. 
