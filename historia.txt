@@ -2,4 +2,5 @@ Hola, esta es mi historia.
 Soy Gabriel y tengo 34 años.
 Mido 1,75.
 Estoy en una practica del curso de git
+Hoy voy a hablarles de mi vida
 Saludos a todos.
