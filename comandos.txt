@@ -1,7 +1,7 @@
 Curso git
 Comandos git:
 1. git status : muestra el status de los cambios
-2. git add (nombre archivo) : agrega archivos a staying
+2. git add (nombre archivo) : agrega archivos a staying (si uso un . en lugar del nombre de archivo, agrego todos los archivos a staying).
 3. git commit -m "Mensaje" : agrega archivos que estaban en staying, al repositorio.
 4. git config : muestra los comandos disponibles y variables configurables.
 5. git config --global user.name "Nombre" : Configura el nombre de usuario de git
@@ -16,7 +16,12 @@ que al hacer log, ningun commit posterior al que indicamos aparece, es decir, vo
 lo que haya quedado en staying cuando se hizo git add permanece disponible).
 12. git log --stat : permite ver todos los cambios ejecutados para cada commit y diferenciados por archivos (moverse con flechas y salir con q).
 13. git checkout ID_commit (nombre archivo): Permite mover la "cabecera" de la rama master hacia un punto en la historia deseado (ID_commit). El ID_commit puede ser reemplazado por la
-palabra "master", y con eso vuelvo la cabecera al momento original antes del checkout al "pasado", es decir la versión actual. 
+palabra "master", y con eso vuelvo la cabecera al momento original antes del checkout al "pasado", es decir la versión actual.
+14. git init: inicia un repositorio en la carpeta en la que nos encontremos al ejecutar el comando.
+15. git config --list : muestra la configuración por defecto actual.
+16. git rm --cached (nombre de archivo) : elimina el archivo de staying y lo vuelve Untracked (sirve para cuando uno se equivoca y agrega cambios que no quiere, con el add, 
+y aun no hace commit).
+
 
 Comandos terminal:
 1. pwd : Indica carpeta actual.
