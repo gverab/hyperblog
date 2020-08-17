@@ -8,7 +8,12 @@ Comandos git:
 6. git config --global user.email "Nombre" : Configura el correo de usuario de git
 7. git show "nombre de archivo" : muestra los cambios efectuados entre los ultimos commits 
 8. git log: Muestra todos los commits hechos a un archivo, y los respectivos IDs de esos commits (sirven para el comando git diff).
-9. git diff ID_commitA ID_commitB : muestra las diferencias en el archivo entre los dos commits indicados. Idealmente usar el commit más antiguo como ID_commitA.
+9. git diff ID_commitA ID_commitB : muestra las diferencias en el archivo entre los dos commits indicados. Idealmente usar el commit más antiguo como ID_commitA. notar que si
+algun commit incluye varios archivos, la comparación entre commits, incluye a todos los archivos modificados.
+10. git reset ID_commit --hard : vuelve el repositorio al estado del commit indicado (todos los archivos vuelven a ese estado y los cambios hechos a partir de ese commit desaparecen). Notar
+que al hacer log, ningun commit posterior al que indicamos aparece, es decir, volvimos en el tiempo y es como si ningun cambio hubiese sido realizado y ningun commit hecho.
+11. git reset ID_commit --soft : vuelve el repositorio al estado del commit indicado (todos los archivos vuelven a ese estado y los cambios hechos a partir de ese commit desaparecen, pero
+lo que haya quedado en staying cuando se hizo git add permanece disponible).
 
 Comandos terminal:
 1. pwd : Indica carpeta actual.
