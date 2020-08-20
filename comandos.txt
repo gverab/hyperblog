@@ -23,7 +23,8 @@ palabra "master", y con eso vuelvo la cabecera al momento original antes del che
 y aun no hace commit).
 NOTA: la diferencia entre git rm --cached (nombre archivo) y git reset HEAD es que: en el primer comando se quita el archivo de Satying pero también lo deja untracked, en cambio
 git reset MASTER (---soft o --hard) los quita del Staying area pero con todo el tracking que tenía. 
-
+git merge: Fusiona dos ramas, pero siempre debo estar parado en la rama MAster (o la que quiero que sea principal) al hacer el merge. Dado que la fusion se hace hacia donde 
+estoy parado con el HEAD
 
 Comandos terminal:
 1. pwd : Indica carpeta actual.
