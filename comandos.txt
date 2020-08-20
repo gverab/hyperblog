@@ -25,6 +25,15 @@ NOTA: la diferencia entre git rm --cached (nombre archivo) y git reset HEAD es q
 git reset MASTER (---soft o --hard) los quita del Staying area pero con todo el tracking que tenía. 
 git merge: Fusiona dos ramas, pero siempre debo estar parado en la rama MAster (o la que quiero que sea principal) al hacer el merge. Dado que la fusion se hace hacia donde 
 estoy parado con el HEAD
+git merge nombre_rama = Fusiona una rama nombre_rama con la actual (en la rama en la que nos encontramos posicionados).
+git pull origin master --allow-unrelated-histories : obliga a fusionar la rama master de origin (remoto) con la la actual rama en la que no encontramos. Puede darse al estar trabajando en repo local, crear repo remoto,
+e intentar traer los cambios desde origin master (dado que en principio los archivos e historias de local y remoto son completamente distintos).
+git merge rama --allow-unrelates-histories : obliga a fusionar rama con la rama actual en la que nos encontramos, aun cuando no tengan historia o archivos en comun.
+git remote add origin URL : Conecta el repositorio remoto indicado en la URL y le da un origen remoto a nuestro repo local. 
+git remote -v : lista las conexiones existentes (repos remotas y locales), en donde se puede hacer fetch o push.
+git pull origin master: Trae los cambios del repo remoto (rama master del remoto), con el repo local en la rama en la que estemos parados actualmente.
+
+
 
 Comandos terminal:
 1. pwd : Indica carpeta actual.
